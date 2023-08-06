@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { getMovieList } from "./api";
+import { getMovieList, searchMovie } from "./api";
 
 const App = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -28,8 +28,11 @@ const App = () => {
     });
   };
 
-  const Search = (q) => {
-    console.log({ q });
+  const Search = async (query) => {
+    if (query.length > 3) {
+      const findFilm = await searchMovie(query);
+      setPopularMovies(findFilm.results);
+    }
   };
 
   return (
