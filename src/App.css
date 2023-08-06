@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  background-color: #F6F8FD;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.movie-search{
+  height: 40 px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding: 16px;
+  border-radius: 12px;
+  width: 50%;
+  border: none;
+}
+
+.movie-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.movie-wrapper {
+  width: 30%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0 9px 30px rgba(234,236,240,.5);
+  border: none;
+  color: black;
+  border-radius: 9px;
+ padding: 12px;
+}
+
+.movie-title{
+  height: 60px;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #34364A;
+}
+
+.movie-image{
+  margin-top: 24px;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.movie-date{
+  color: #34364A;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.movie-rate{
+  font-size: 20px;
+  color: #2447F9;
+  margin-bottom: 16px;
+  font-weight: bold;
+  opacity: .8;
+}
+
+
+@media screen and (max-width: 730px) {
+  .movie-wrapper {
+    width: 40%;
+   padding: 6px;
+  }
+  .movie-title{
+    /* height: 40px; */
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 20px;
+   
+  }
+  .movie-image{
+    margin-top: 8px;
+    width: 120px;
+    height: 170px;
+    border-radius: 10px;
+  }
+  .movie-date{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .movie-rate{
+    font-size: 14px;
+    color: #2447F9;
+    margin-bottom: 16px;
+    font-weight: bold;
+    opacity: .8;
+  }
+
+}
