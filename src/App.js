@@ -11,27 +11,28 @@ const App = () => {
     });
   }, []);
 
-  const PopularMovieList = () => {
-    return popularMovies.map((movie, i) => {
-      return (
-        <div className="movie-wrapper" key={i}>
-          <div className="movie-title">{movie.title}</div>
-          <img
-            className="movie-image"
-            src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}
-          />
-          <div className="movie-date">{movie.release_date}</div>
-          <div className="movie-rate">{movie.vote_average}</div>
-        </div>
-      );
-    });
-  };
+  console.log({ popularMovies: popularMovies });
+
+  // const PopularMovieList = () => {
+  //   return popularMovies.map((movie, i) => {
+  //     return (
+  //       <div className="movie-wrapper" key={i}>
+  //         <div className="movie-title">{movie.title}</div>
+  //         <img
+  //           alt="banner"
+  //           className="movie-image"
+  //           src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}
+  //         />
+  //         <div className="movie-date">{movie.release_date}</div>
+  //         <div className="movie-rate">{movie.vote_average}</div>
+  //       </div>
+  //     );
+  //   });
+  // };
 
   const Search = (q) => {
     console.log({ q });
   };
-
-  console.log({ popularMovies: popularMovies });
 
   return (
     <div className="App">
@@ -42,9 +43,7 @@ const App = () => {
           className="movie-search"
           onChange={({ target }) => Search(target.value)}
         />
-        <div className="movie-container">
-          <PopularMovieList />
-        </div>
+        <div className="movie-container">{/* <PopularMovieList /> */}</div>
       </header>
     </div>
   );
