@@ -1,6 +1,10 @@
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Disclaimer:
+I was put .env in this repo just for educational purpose, just in case
+============================
+usually, I'm not push .env to repo because security purpose & this is critical
 
 ## Result:
 https://movie-list-viewer.vercel.app/
