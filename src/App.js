@@ -42,7 +42,7 @@ const App = () => {
           onChange={({ target }) => Search(target.value)}
         />
         <div className="movie-container">
-          <PopularMovieList />{" "}
+          <PopularMovieList />
         </div>
       </header>
     </div>
