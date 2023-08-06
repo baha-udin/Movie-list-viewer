@@ -35,14 +35,13 @@ const App = () => {
   return (
     <div className="App">
       <header className="App -header">
-        <h1>Udin movie mania</h1>
+        <h1>Movie list updater</h1>
         <input
           placeholder="Search your favourite films"
           className="movie-search"
           onChange={({ target }) => Search(target.value)}
         />
         <div className="movie-container">
-          <div></div>
           <PopularMovieList />
         </div>
       </header>
